@@ -1,10 +1,78 @@
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  font: 14px Helvetica, sans-serif;
+  margin: 0 auto;
+  background-color: black;
+  color: white; 
 }
 
-ol, ul {
-  padding-left: 30px;
+.theme_1 {
+  background-color: orange;
+}
+.theme_2 {
+  background-color: lightpink;
+}
+.theme_3 {
+  background-color: lightseagreen;
+}
+.theme_4 {
+  background-color: tomato;
+}
+.theme_5 {
+  background-color: darkolivegreen;
+}
+.theme_6 {
+  background-color: lightslategray;
+}
+.theme_1 {
+  background-color: orange;
+}
+.theme_2 {
+  background-color: lightpink;
+}
+.theme_3 {
+  background-color: lightseagreen;
+}
+.theme_4 {
+  background-color: cornflowerblue;
+}
+.theme_5 {
+  background-color: darkolivegreen;
+}
+.theme_6 {
+  background-color: slategray;
+}
+.theme_7 {
+  background-color: indianred;
+}
+.theme_8 {
+  background-color: #8a4ca8;
+}
+
+.game-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 8px;
+}
+
+ul {
+  position: relative;
+  right: 12px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 64px;
+  font-style: italic;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 12px;
 }
 
 .board-row:after {
@@ -13,39 +81,55 @@ ol, ul {
   display: table;
 }
 
-.status {
-  margin-bottom: 10px;
+.game-board {
+  position: relative;
+  right: 10px;
+  top: 10px;
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background-color: transparent;
+  border: 8px solid white;
   float: left;
-  font-size: 24px;
+  font-size: 82px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
+  height: 102px;
+  margin-right: -16px;
+  margin-top: -16px;
   padding: 0;
+  padding-bottom: 10px;
   text-align: center;
-  width: 34px;
+  font-style: normal;
+  color: white;
+  width: 102px;
 }
 
 .square:focus {
   outline: none;
 }
 
-.kbd-navigation .square:focus {
-  background: #ddd;
-}
-
 .game {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.game-info {
-  margin-left: 20px;
+button {
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
+  padding: 16px 16px;
+  margin: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
 }
 
+li {
+  list-style-type: none;
+  display: inline-block;
+}
